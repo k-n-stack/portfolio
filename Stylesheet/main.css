@@ -32,7 +32,7 @@ body {
     margin: 0;
     padding: 0;
 
-    height: 70px;
+    /* height: 70px; */
     overflow: hidden;
 
     display: flex;
@@ -41,7 +41,17 @@ body {
 }
 
 #navbar-ls li {
-    float: left;
+    /* float: left; */
+    /* height: 70px; */
+    height: 80px;
+    display: flex;
+    align-items: center;
+
+    transition: background-color 0.4s;
+}
+
+.nav-el:hover {
+    background-color: black;
 }
 
 #navbar-ls li a {
@@ -50,10 +60,13 @@ body {
     text-align: center;
     padding: 14px 25px;
     text-decoration: none;
+
 }
-
-
 
 #navbar-logo a img {
     height: 50px;
+}
+
+#connection-zone {
+    flex-grow: 1;
 }

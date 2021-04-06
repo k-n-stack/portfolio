@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="Stylesheet/main.css">
 </head>
 <body>
+
     <nav>
         <ul id="navbar-ls">
-            <li id="navbar-logo"><a href=""><img src="Ressources\cii_white.png" alt=""></a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">PHP</a></li>
-            <li><a href="">JavaScript</a></li>
-            <li><a href="">C++</a></li>
+            <li class="nav-el" id="navbar-logo"><a href=""><img src="Ressources\cii_white.png" alt=""></a></li>
+            <li class="nav-el"><a href="">About</a></li>
+            <li class="nav-el"><a href="">PHP</a></li>
+            <li class="nav-el"><a href="">JavaScript</a></li>
+            <li class="nav-el"><a href="">C++</a></li>
+            <li id="connection-zone">
+                <div>hello</div>
+            </li>
         </ul>
     </nav>
+
+    <section id="main-section">main section</section>
+    <section id="right-panel">right panel</section>
+    
 </body>
 </html>
