@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="Stylesheet/main.css">
 </head>
 <body>
-    <div id="test1">hello</div>
+    <nav>
+        <ul id="navbar-ls">
+            <li id="navbar-logo"><a href=""><img src="Ressources\cii_white.png" alt=""></a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">PHP</a></li>
+            <li><a href="">JavaScript</a></li>
+            <li><a href="">C++</a></li>
+        </ul>
+    </nav>
 </body>
 </html>

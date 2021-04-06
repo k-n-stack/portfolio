@@ -1,6 +1,6 @@
 <?php
 
-echo "home controller";
+// echo "home controller";
 
 if(empty($_SESSION['user'])) {
     include_once("View/home.php");
