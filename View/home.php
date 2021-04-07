@@ -17,13 +17,26 @@
             <li class="nav-el"><a href="">JavaScript</a></li>
             <li class="nav-el"><a href="">C++</a></li>
             <li id="connection-zone">
-                <div>hello</div>
+                <div>connection zone</div>
             </li>
         </ul>
     </nav>
 
-    <section id="main-section">main section</section>
-    <section id="right-panel">right panel</section>
-    
+    <div id="main-zone">
+        <section id="main-section">
+            <div class="language-card" id="lang-c-about">lang01</div>
+            <div class="language-card" id="lang-c-php">php
+                
+            </div>
+            <div class="language-card" id="lang-c-js">lang03</div>
+            <div class="language-card" id="lang-c-cpp">lang04</div>
+            <div class="language-card" id="lang-c-01">lang05</div>
+            <div class="language-card" id="lang-c-02">lang06</div>
+        </section>
+        <section id="right-panel">right panel</section>
+    </div>
+
+    <div id="toolbox-zone"></div>
+
 </body>
 </html>

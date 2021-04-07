@@ -22,7 +22,49 @@ body {
     background-color: rgb(0, 0, 0);
 
     font-family: "Gill Sans", sans-serif;
+    /* color: white; */
+}
+
+section {
+    /* border-style: solid; */
+    /* border-color: white; */
     color: white;
+}
+
+.language-card {
+    /* border-style: solid;
+    border-color: white; */
+    box-sizing: border-box;
+}
+
+#main-zone {
+    /* border-style: solid; */
+    /* border-color: pink; */
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    height: 800px;
+
+}
+
+#main-section {
+    border-radius: 15px;
+
+    grid-column: 1/4;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px 0px 20px 20px;
+
+    overflow: hidden;
+    display: flex;
+}
+
+#right-panel {
+    border-radius: 15px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px;
 }
 
 #navbar-ls {
@@ -69,4 +111,105 @@ body {
 
 #connection-zone {
     flex-grow: 1;
+}
+
+#lang-c-about {
+    background-color: rgba(255, 0, 0, 0.1);
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-about:hover {
+    background-color: rgba(255, 0, 0, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-about:hover ~ .language-card { 
+    width: calc(100% / 10); 
+}
+
+#lang-c-php {
+    position: relative;
+    overflow:hidden;
+    /* background-color: rgb(24, 26, 133, 0.1); */
+    /* background-image: url("../Ressources/php-logo.png");
+    background-repeat: no-repeat; */
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-php::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 30%;
+    left: -150%;
+    z-index: -1;
+    background: url("../Ressources/php-logo.png") 0 0 no-repeat;
+    background-size: 80%;
+    /* transform: rotate(30deg); */
+    transform: rotate(90deg);
+    transition: transform 1s, left 0.4s, background-size 1s;
+}
+#lang-c-php:hover {
+    background-color: rgb(24, 26, 133, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-php:hover ~ .language-card {
+    width: calc(100% / 10);
+}
+#lang-c-php:hover::before {
+    transform: rotate(30deg);
+    left: 0%;
+    background-size: 50%;
+}
+
+#lang-c-js {
+    background-color: rgba(255, 255, 0, 0.1);
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-js:hover {
+    background-color: rgba(255, 255, 0, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-js:hover ~ .language-card {
+    width: calc(100% / 10);
+}
+
+#lang-c-cpp {
+    background-color: rgba(38, 114, 255, 0.1);
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-cpp:hover {
+    background-color: rgba(38, 114, 255, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-cpp:hover ~ .language-card {
+    width: calc(100% / 10);
+}
+
+#lang-c-01 {
+    background-color: rgba(0, 128, 0, 0.1);
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-01:hover {
+    background-color: rgba(0, 128, 0, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-01:hover ~ .language-card {
+    width: calc(100% / 10);
+}
+
+#lang-c-02 {
+    background-color: rgba(255, 166, 0, 0.1);
+    width: calc(100% / 6);
+    transition: width 0.6s, background-color 1s;
+}
+#lang-c-02:hover {
+    background-color: rgba(255, 166, 0, 0.3);
+    width: calc(100% / 1);
+}
+#lang-c-02:hover ~ .language-card {
+    width: calc(100% / 10);
 }
