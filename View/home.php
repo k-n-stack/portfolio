@@ -11,7 +11,11 @@
 
     <nav>
         <ul id="navbar-ls">
-            <li class="nav-el" id="navbar-logo"><a href=""><img src="Ressources\cii_white.png" alt=""></a></li>
+            <li class="nav-el" id="navbar-logo">
+                <a href="">
+                    <img src="Ressources\cii_white.png" alt="">
+                </a>
+            </li>
             <li class="nav-el"><a href="">About</a></li>
             <li class="nav-el"><a href="">PHP</a></li>
             <li class="nav-el"><a href="">JavaScript</a></li>
@@ -24,14 +28,12 @@
 
     <div id="main-zone">
         <section id="main-section">
-            <div class="language-card" id="lang-c-about">lang01</div>
-            <div class="language-card" id="lang-c-php">php
-                
-            </div>
-            <div class="language-card" id="lang-c-js">lang03</div>
-            <div class="language-card" id="lang-c-cpp">lang04</div>
-            <div class="language-card" id="lang-c-01">lang05</div>
-            <div class="language-card" id="lang-c-02">lang06</div>
+            <div class="language-card" id="lang-c-about">about</div>
+            <div class="language-card" id="lang-c-php">php</div>
+            <div class="language-card" id="lang-c-js">javascript</div>
+            <div class="language-card" id="lang-c-html">html</div>
+            <div class="language-card" id="lang-c-css">css</div>
+            <div class="language-card" id="lang-c-cpp">cpp</div>
         </section>
         <section id="right-panel">right panel</section>
     </div>
