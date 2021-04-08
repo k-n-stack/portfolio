@@ -115,19 +115,63 @@ section {
 }
 
 #lang-c-about {
-    background-color: rgba(255, 0, 0, 0.1);
+    position: relative;
+    overflow:hidden;
+    /* background-color: rgb(24, 26, 133, 0.1); */
+    /* background-image: url("../Ressources/about-logo.png");
+    background-repeat: no-repeat; */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
+    /* overflow: visible; */
+}
+#lang-c-about::before {
+    /* border-style: solid;
+    border-color: burlywood; */
+    padding-bottom: 25%;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 49%;
+    left: 73%;
+    z-index: -1;
+    background: url("../Ressources/about-logo.png") 0 0 no-repeat;
+    background-size: 45%;
+    /* transform: rotate(30deg); */
+    transform: rotate(0deg);
+    transition: 
+        transform 1.3s, 
+        left 0.4s, 
+        top 0.4s, 
+        background-size 1s, 
+        opacity 2.5s;
+    /* overflow: visible; */
+    opacity: 0.4;
+    /* overflow: visible; */
 }
 #lang-c-about:hover {
-    background-color: rgba(255, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.514);
+    /* background: repeating-linear-gradient(125deg,
+    rgba(0, 0, 0, 0.1), 
+    rgba(0, 0, 0, 0.1) 12px, 
+    rgba(255, 255, 255, 0.1) 12px, 
+    rgba(255, 255, 255, 0.1) 24px); */
     width: calc(100% / 1);
+    /* overflow: visible; */
 }
-#lang-c-about:hover ~ .language-card { 
-    width: calc(100% / 10); 
+#lang-c-about:hover ~ .language-card {
+    width: calc(100% / 10);
+}
+#lang-c-about:hover::before {
+    /* transform: rotate(-60deg); */
+    top: 0%;
+    left: 0%;
+    background-size: 20%;
+    /* overflow: visible; */
+    opacity: 0.3;
 }
 
-
+/****************/
 #lang-c-php {
     position: relative;
     overflow:hidden;
@@ -136,17 +180,21 @@ section {
     background-repeat: no-repeat; */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
+    /* overflow: visible; */
 }
 #lang-c-php::before {
+    /* border-style: solid;
+    border-color: burlywood; */
+    padding-bottom: 25%;
     content: "";
     position: absolute;
     width: 100%;
-    height: 150%;
+    height: 100%;
     top: 50%;
-    left: 30%;
+    left: 10%;
     z-index: -1;
-    background: url("../Ressources/php-logo.png") 0 0 no-repeat;
-    background-size: 80%;
+    background: url("../Ressources/php-logo2.png") 0 0 no-repeat;
+    background-size: 140%;
     /* transform: rotate(30deg); */
     transform: rotate(0deg);
     transition: 
@@ -157,6 +205,7 @@ section {
         opacity 2.5s;
     /* overflow: visible; */
     opacity: 1.0;
+    /* overflow: visible; */
 }
 #lang-c-php:hover {
     background-color: rgb(24, 26, 133, 0.3);
@@ -173,9 +222,9 @@ section {
 }
 #lang-c-php:hover::before {
     transform: rotate(-60deg);
-    top: -60%;
-    left: 55%;
-    background-size: 50%;
+    top: 30%;
+    left: 0%;
+    background-size: 100%;
     /* overflow: visible; */
     opacity: 0.3;
 }
@@ -260,8 +309,8 @@ section {
     width: calc(100% / 10);
 }
 #lang-c-html:hover::before {
-    transform: translateX(-60%);
-    top: 0%;
+    transform: rotate(30deg);
+    top: 30%;
     left: 40%;
     background-size: 65%;
     opacity: 0.3;
@@ -283,7 +332,7 @@ section {
     top: 50%;
     left: 30%;
     z-index: -1;
-    background: url("../Ressources/html-logo.png") 0 0 no-repeat;
+    background: url("../Ressources/css-logo.png") 0 0 no-repeat;
     background-size: 103%;
     /* transform: rotate(30deg); */
     /* transform: rotate(0deg); */
@@ -296,29 +345,59 @@ section {
     opacity: 1.0;
 }
 #lang-c-css:hover {
-    background-color: rgba(255, 136, 0, 0.171);
+    background-color: rgba(0, 132, 255, 0.171);
     width: calc(100% / 1);
 }
 #lang-c-css:hover ~ .language-card {
     width: calc(100% / 10);
 }
 #lang-c-css:hover::before {
-    transform: scale(2, 2);
-    top: 0%;
+    transform: rotate(30deg);
+    top: 30%;
     left: 40%;
     background-size: 65%;
     opacity: 0.3;
 }
 
 #lang-c-cpp {
-    background-color: rgba(255, 166, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    /* background-color: rgba(255, 255, 0, 0.1); */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
 }
+#lang-c-cpp::before {
+    padding-bottom: 10%;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 30%;
+    z-index: -1;
+    background: url("../Ressources/cpp-logo2.png") 0 0 no-repeat;
+    background-size: 100%;
+    /* transform: rotate(30deg); */
+    /* transform: rotate(0deg); */
+    transition: 
+        transform 0.5s, 
+        left 0.4s, 
+        top 0.4s, 
+        background-size 1s,
+        opacity 2.5s;
+    opacity: 1.0;
+}
 #lang-c-cpp:hover {
-    background-color: rgba(255, 166, 0, 0.3);
+    background-color: rgba(0, 247, 255, 0.171);
     width: calc(100% / 1);
 }
 #lang-c-cpp:hover ~ .language-card {
     width: calc(100% / 10);
+}
+#lang-c-cpp:hover::before {
+    transform: rotate(10deg);
+    top: -22%;
+    left: 20%;
+    background-size: 65%;
+    opacity: 0.3;
 }
