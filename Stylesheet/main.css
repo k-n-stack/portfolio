@@ -4,7 +4,6 @@ html {
 
 body {
     height: 100%;
-    /* min-width: 960px; */
     margin: 0;
     
     background:
@@ -23,25 +22,17 @@ body {
     background-attachment: fixed;
     
     font-family: "Gill Sans", sans-serif;
-    /* color: white; */
 }
 
 section {
-    /* border-style: solid; */
-    /* border-color: white; */
     color: white;
 }
 
 .language-card {
-    /* border-style: solid;
-    border-color: white; */
     box-sizing: border-box;
 }
 
 #main-zone {
-    /* border-style: solid; */
-    /* border-color: pink; */
-
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 
@@ -75,7 +66,6 @@ section {
     margin: 0;
     padding: 0;
 
-    /* height: 70px; */
     overflow: hidden;
 
     display: flex;
@@ -84,8 +74,6 @@ section {
 }
 
 #navbar-ls li {
-    /* float: left; */
-    /* height: 70px; */
     height: 80px;
     display: flex;
     align-items: center;
@@ -114,19 +102,14 @@ section {
     flex-grow: 1;
 }
 
+/********** about zone **********/
 #lang-c-about {
     position: relative;
     overflow:hidden;
-    /* background-color: rgb(24, 26, 133, 0.1); */
-    /* background-image: url("../Ressources/about-logo.png");
-    background-repeat: no-repeat; */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
-    /* overflow: visible; */
 }
 #lang-c-about::before {
-    /* border-style: solid;
-    border-color: burlywood; */
     padding-bottom: 25%;
     content: "";
     position: absolute;
@@ -137,7 +120,6 @@ section {
     z-index: -1;
     background: url("../Ressources/about-logo.png") 0 0 no-repeat;
     background-size: 45%;
-    /* transform: rotate(30deg); */
     transform: rotate(0deg);
     transition: 
         transform 1.3s, 
@@ -145,46 +127,30 @@ section {
         top 0.4s, 
         background-size 1s, 
         opacity 2.5s;
-    /* overflow: visible; */
     opacity: 0.4;
-    /* overflow: visible; */
 }
 #lang-c-about:hover {
     background-color: rgba(0, 0, 0, 0.514);
-    /* background: repeating-linear-gradient(125deg,
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1) 12px, 
-    rgba(255, 255, 255, 0.1) 12px, 
-    rgba(255, 255, 255, 0.1) 24px); */
     width: calc(100% / 1);
-    /* overflow: visible; */
 }
 #lang-c-about:hover ~ .language-card {
     width: calc(100% / 10);
 }
 #lang-c-about:hover::before {
-    /* transform: rotate(-60deg); */
     top: 0%;
     left: 0%;
     background-size: 20%;
-    /* overflow: visible; */
     opacity: 0.3;
 }
 
-/****************/
+/********** php zone ***********/
 #lang-c-php {
     position: relative;
     overflow:hidden;
-    /* background-color: rgb(24, 26, 133, 0.1); */
-    /* background-image: url("../Ressources/php-logo.png");
-    background-repeat: no-repeat; */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
-    /* overflow: visible; */
 }
 #lang-c-php::before {
-    /* border-style: solid;
-    border-color: burlywood; */
     padding-bottom: 25%;
     content: "";
     position: absolute;
@@ -195,7 +161,6 @@ section {
     z-index: -1;
     background: url("../Ressources/php-logo2.png") 0 0 no-repeat;
     background-size: 140%;
-    /* transform: rotate(30deg); */
     transform: rotate(0deg);
     transition: 
         transform 1.3s, 
@@ -203,19 +168,11 @@ section {
         top 0.4s, 
         background-size 1s, 
         opacity 2.5s;
-    /* overflow: visible; */
     opacity: 1.0;
-    /* overflow: visible; */
 }
 #lang-c-php:hover {
     background-color: rgb(24, 26, 133, 0.3);
-    /* background: repeating-linear-gradient(125deg,
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1) 12px, 
-    rgba(255, 255, 255, 0.1) 12px, 
-    rgba(255, 255, 255, 0.1) 24px); */
     width: calc(100% / 1);
-    /* overflow: visible; */
 }
 #lang-c-php:hover ~ .language-card {
     width: calc(100% / 10);
@@ -225,15 +182,13 @@ section {
     top: 30%;
     left: 0%;
     background-size: 100%;
-    /* overflow: visible; */
     opacity: 0.3;
 }
 
-
+/********** javascript zone **********/
 #lang-c-js {
     position: relative;
     overflow: hidden;
-    /* background-color: rgba(255, 255, 0, 0.1); */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
 }
@@ -247,7 +202,6 @@ section {
     z-index: -1;
     background: url("../Ressources/js-logo.png") 0 0 no-repeat;
     background-size: 100%;
-    /* transform: rotate(30deg); */
     transform: rotate(0deg);
     transition: 
         transform 1s, 
@@ -272,12 +226,10 @@ section {
     opacity: 0.3;
 }
 
-
-
+/********** html zone **********/
 #lang-c-html {
     position: relative;
     overflow: hidden;
-    /* background-color: rgba(255, 255, 0, 0.1); */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
 }
@@ -291,8 +243,6 @@ section {
     z-index: -1;
     background: url("../Ressources/html-logo.png") 0 0 no-repeat;
     background-size: 103%;
-    /* transform: rotate(30deg); */
-    /* transform: rotate(0deg); */
     transition: 
         transform 0.5s, 
         left 0.4s, 
@@ -316,11 +266,10 @@ section {
     opacity: 0.3;
 }
 
-
+/********** css zone **********/
 #lang-c-css {
     position: relative;
     overflow: hidden;
-    /* background-color: rgba(255, 255, 0, 0.1); */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
 }
@@ -334,8 +283,6 @@ section {
     z-index: -1;
     background: url("../Ressources/css-logo.png") 0 0 no-repeat;
     background-size: 103%;
-    /* transform: rotate(30deg); */
-    /* transform: rotate(0deg); */
     transition: 
         transform 0.5s, 
         left 0.4s, 
@@ -359,10 +306,10 @@ section {
     opacity: 0.3;
 }
 
+/********** c++ zone **********/
 #lang-c-cpp {
     position: relative;
     overflow: hidden;
-    /* background-color: rgba(255, 255, 0, 0.1); */
     width: calc(100% / 6);
     transition: width 0.6s, background-color 1s;
 }
@@ -377,8 +324,6 @@ section {
     z-index: -1;
     background: url("../Ressources/cpp-logo2.png") 0 0 no-repeat;
     background-size: 100%;
-    /* transform: rotate(30deg); */
-    /* transform: rotate(0deg); */
     transition: 
         transform 0.5s, 
         left 0.4s, 
@@ -400,4 +345,19 @@ section {
     left: 20%;
     background-size: 65%;
     opacity: 0.3;
+}
+
+#about-text {
+    visibility: hidden;
+    border-style: solid;
+    border-color: pink;
+    opacity: 0;
+}
+
+#lang-c-about:hover #about-text {
+    visibility: visible;
+    transition-property: visibility, opacity;
+    transition-duration: 0s, 0.6s;
+    transition-delay: 0.6s; 
+    opacity: 1;
 }

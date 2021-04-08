@@ -28,7 +28,11 @@
 
     <div id="main-zone">
         <section id="main-section">
-            <div class="language-card" id="lang-c-about">about</div>
+            <div class="language-card" id="lang-c-about">about
+                <div id="about-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quisquam voluptatum veritatis quos dicta, culpa maiores explicabo facilis in dolor sed. Expedita architecto quam a deleniti delectus asperiores nesciunt, laudantium cupiditate amet consequuntur praesentium id modi vero ab iusto ipsam inventore omnis molestiae hic nihil ut enim animi blanditiis sint.
+                </div>
+            </div>
             <div class="language-card" id="lang-c-php">php</div>
             <div class="language-card" id="lang-c-js">javascript</div>
             <div class="language-card" id="lang-c-html">html</div>
